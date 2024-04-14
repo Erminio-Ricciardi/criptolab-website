@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<!--                                                        
+
+-->
+<html lang="en" data-theme="light" id="top">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cripto Lab</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon_32x32.png"
+    />
+    <!--<link rel="shortcut icon" href="">-->
+    <link rel="manifest" href="/manifest.webmanifest" />
+
+    <link rel="stylesheet" href="css/stile.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <script src="/js/tsparticles.js"></script>
+    <!--<script src="/js/particelle.js"></script>-->
+    <link
+      type="text/plain"
+      href="https://www.criptolab.com/humans.txt"
+      rel="author"
+    />
+
+    <meta name="description" content="" />
+    <meta
+      name="robots"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+    <link rel="canonical" href="" />
+    <link rel="next" href="" />
+    <meta property="og:locale" content="it_IT" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Cripto Lab" />
+    <meta property="og:description" content="Web3 Consulting Agency" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="Cripto Lab" />
+    <meta property="og:image" content="/opengraph_img.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="628" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="" />
+  </head>
+  <body>
+    <div class="banner">
+      <div id="tsparticles"></div>
+      <div id="hamburger" class="banner_elemento bg_turc">
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+        <!--fine hamburgers-lines-->
+        <div class="menu">
+          <div class="menu_box flex flex_column vertical_center drop_shadow">
+            <a class="" href="#">
+              <div class="menu_box_elemento colore_nero">Home</div>
+            </a>
+            <a class="" href="#agenzia">
+              <div class="menu_box_elemento colore_bianco">Agenzia</div></a
+            >
+            <a class="" href="#servizi">
+              <div class="menu_box_elemento colore_nero">Servizi</div>
+            </a>
+            <a class="" href="#clienti">
+              <div class="menu_box_elemento colore_bianco">Clienti</div>
+            </a>
+            <a class="" href="#team">
+              <div class="menu_box_elemento colore_nero">Team</div>
+            </a>
+            <a class="" href="#partners">
+              <div class="menu_box_elemento colore_bianco">Partners</div>
+            </a>
+          </div>
+        </div>
+        <!--fine menu_box-->
+      </div>
+      <!--fine header_hamburger-->
+      <div
+        id="banner_mail"
+        class="banner_elemento bg_pelle flex justify_content_center vertical_center"
+      >
+        <svg id="banner_mail_svg" viewBox="0 0 49 31.47">
+          <path
+            d="M.5,12.74V37.26A3.47,3.47,0,0,0,4,40.73H46a3.47,3.47,0,0,0,3.47-3.47V12.74A3.47,3.47,0,0,0,46,9.27H4A3.47,3.47,0,0,0,.5,12.74Zm47,25.3L31.79,24.9,47.54,12ZM19.17,25.69,25,30.47l5.86-4.81L46.79,39H3.61ZM46.18,11,25,28.41,3.82,11ZM18.24,24.93,2.46,38.38V12Z"
+            transform="translate(-0.5 -9.27)"
+          />
+        </svg>
+      </div>
+      <!--fine banner_mail-->
+      <div class="mailbox_overlay mrhide">
+        <div class="mailbox">
+          <form
+            method="POST"
+            action="sendmail.php"
+            id="mailbox_form"
+            class="flex flex_column justify_content_between vertical_center"
+          >
+            <div class="mailbox_titolo">Contattaci</div>
+            <div class="mailbox_annuncio colore_pelle">
+              Lascia il tuo messaggio
+            </div>
+            <div
+              id="mailbox_box_elementi"
+              class="flex flex_column justify_content_between vertical_center"
+            >
+              <div id="nome_input" class="mailbox_elemento">
+                <input
+                  type="text"
+                  name="nome_input"
+                  id="nome_input"
+                  class="mailbox_input"
+                  placeholder="Name *"
+                />
+              </div>
+              <div id="mail_input" class="mailbox_elemento">
+                <input
+                  type="text"
+                  name="mail_input"
+                  id="mail_input"
+                  class="mailbox_input"
+                  placeholder="Mail *"
+                />
+              </div>
+              <div id="messaggio_input" class="mailbox_elemento">
+                <textarea
+                  style="resize: none"
+                  rows="8"
+                  cols="80"
+                  name="messaggio_input"
+                  id="messaggio_input"
+                  class="cursore_zero"
+                  placeholder="Messaggio *"
+                ></textarea>
+              </div>
+            </div>
+            <!--fine flex-->
+            <div
+              class="mailbox_bottone flex justify_content_center vertical_center"
+            >
+              Invia
+            </div>
+          </form>
+          <!--fine flex-->
+          <div class="mailbox_sfondo">
+            <svg
+              id="mailbox_sfondo_croce_1"
+              class="mailbox_sfondo_elemento"
+              viewBox="0 0 82.08 82.08"
+            >
+              <path
+                d="M75.19,32.23H50.77V7.81A7.38,7.38,0,0,0,43.41.46H39.59a7.38,7.38,0,0,0-7.36,7.35V32.23H7.81A7.38,7.38,0,0,0,.46,39.59v3.82a7.38,7.38,0,0,0,7.35,7.36H32.23V75.19a7.38,7.38,0,0,0,7.36,7.35h3.82a7.38,7.38,0,0,0,7.36-7.35V50.77H75.19a7.38,7.38,0,0,0,7.35-7.36V39.59A7.38,7.38,0,0,0,75.19,32.23Z"
+                transform="translate(-0.46 -0.46)"
+                style="fill: #ddc7b8"
+              />
+            </svg>
+            <svg
+              id="mailbox_sfondo_croce_2"
+              class="mailbox_sfondo_elemento"
+              viewBox="0 0 82.08 82.08"
+            >
+              <path
+                d="M75.19,32.23H50.77V7.81A7.38,7.38,0,0,0,43.41.46H39.59a7.38,7.38,0,0,0-7.36,7.35V32.23H7.81A7.38,7.38,0,0,0,.46,39.59v3.82a7.38,7.38,0,0,0,7.35,7.36H32.23V75.19a7.38,7.38,0,0,0,7.36,7.35h3.82a7.38,7.38,0,0,0,7.36-7.35V50.77H75.19a7.38,7.38,0,0,0,7.35-7.36V39.59A7.38,7.38,0,0,0,75.19,32.23Z"
+                transform="translate(-0.46 -0.46)"
+                style="fill: var(--colore_arancio)"
+              />
+            </svg>
+            <svg
+              id="mailbox_sfondo_croce_3"
+              class="mailbox_sfondo_elemento"
+              viewBox="0 0 82.08 82.08"
+            >
+              <path
+                d="M75.19,32.23H50.77V7.81A7.38,7.38,0,0,0,43.41.46H39.59a7.38,7.38,0,0,0-7.36,7.35V32.23H7.81A7.38,7.38,0,0,0,.46,39.59v3.82a7.38,7.38,0,0,0,7.35,7.36H32.23V75.19a7.38,7.38,0,0,0,7.36,7.35h3.82a7.38,7.38,0,0,0,7.36-7.35V50.77H75.19a7.38,7.38,0,0,0,7.35-7.36V39.59A7.38,7.38,0,0,0,75.19,32.23Z"
+                transform="translate(-0.46 -0.46)"
+                style="fill: #ddc7b8"
+              />
+            </svg>
+            <svg
+              id="mailbox_sfondo_cerchio_1"
+              class="mailbox_sfondo_elemento"
+              viewBox="0 0 82.08 82.08"
+            >
+              <circle cx="168" cy="179" r="59" />
+            </svg>
+          </div>
+          <!--fine mailbox_sfondo-->
+        </div>
+        <!--fine mailbox-->
+      </div>
+      <!--fine mailbox_overlay-->
+    </div>
+    <!--fine banner-->
+
+    <!--Agenzia-->
+
+    <div id="agenzia" class="riga">
+      <div class="box_com box_50 bg_arancio flex flex_column vertical_center">
+        <div id="agenzia_box_titolo" class="box_titolo colore_pelle">
+          Cripto Lab
+        </div>
+        <div class="box_txt box_osservato colore_nero">
+          CryptoLab is Web3 consulting agency, It's born to improve the
+          communication in your crypto project on Discord/Twitter/Telegram. We
+          study the best strategy to grow the community and create contents to
+          increase the engagement with your oudience.
+        </div>
+        <!--fine box_txt-->
+      </div>
+      <!--fine box-->
+      <div
+        class="box box_com box_50 bg_pelle flex justify_content_center vertical_center"
+      >
+        <img
+          src="/immagini/agenzia/criptolab_section_man.svg"
+          id="agenzia_img_man"
+          alt="agenzia cripto lab man"
+        />
+        <img
+          src="/immagini/agenzia/criptolab_section_robot.svg"
+          id="agenzia_img_robot"
+          alt="agenzia cripto lab robot"
+        />
+      </div>
+      <!--fine box-->
+    </div>
+    <!--fine riga-->
+
+    <!--Servizi-->
+
+    <div id="servizi" class="riga">
+      <div class="box_com box_50 bg_nero flex flex_column vertical_center">
+        <div id="servizi_box_titolo" class="box_titolo colore_bianco">
+          Servizi
+        </div>
+        <div class="box_txt box_osservato colore_arancio">
+          <ul class="servizi_lista">
+            <li class="servizi_lista_elemento">
+              Content Creation & Management
+            </li>
+            <li class="servizi_lista_elemento">Brand & Product Lunch</li>
+            <li class="servizi_lista_elemento">Community Growth</li>
+            <li class="servizi_lista_elemento">NFT</li>
+            <li class="servizi_lista_elemento">
+              Decentralized Website creation
+            </li>
+          </ul>
+          <!--fine servizi_lista-->
+        </div>
+        <!--fine box_txt-->
+      </div>
+      <div
+        class="box box_com box_50 bg_arancio flex flex_column vertical_center"
+      >
+        <div id="clienti_box_titolo" class="box_titolo colore_nero">
+          Clienti
+        </div>
+        <div class="box_txt box_osservato colore_pelle">
+          <ul class="servizi_lista">
+            <li>Rowdy Parrots</li>
+          </ul>
+          <!--fine servizi_lista-->
+        </div>
+        <!--fine box_txt-->
+      </div>
+    </div>
+    <!--fine riga-->
+
+    <!--Team-->
+
+    <div id="team" class="riga">
+      <div
+        id="box_team_nicola"
+        class="box box_33 box_bordo bg_turc flex flex_column justify_content_between vertical_center"
+      >
+        <div class="box_titolo_25 team_box_titolo colore_pelle">Nicola</div>
+        <div
+          class="box_img box_osservato colore_nero flex justify_content_center vertical_align"
+        >
+          <img
+            class="team_img"
+            src="/immagini/team/criptolab_team_nicola.png"
+            alt="Nicola CEO"
+          />
+        </div>
+        <!--fine box_img-->
+        <div class="box_job">CEO</div>
+        <!--fine box_job-->
+        <div class="box_linkedin">
+          <a href="#">
+            <svg class="team_linkedin_svg" viewBox="0 0 49 39.79">
+              <path
+                d="M39.39,49.11V31.32a8.74,8.74,0,0,0-.88-3.79,6,6,0,0,0-1-1.53,4.77,4.77,0,0,0-2.88-1.44,5.76,5.76,0,0,0-1.9.07A4.92,4.92,0,0,0,30,26.28a8,8,0,0,0-1.5,2.79,5.28,5.28,0,0,0-.27,1.68q0,8.82,0,17.65a1.39,1.39,0,0,1-.05.6l-.28,0c-2.09.06-9.24,0-9.73-.05a2,2,0,0,1,0-.27c0-.13,0-.26,0-.39V17.72c0-.21,0-.42,0-.61a.71.71,0,0,1,.5-.08h9.48c.15.14.11.27.11.4,0,.85,0,1.7,0,2.55v.55a.93.93,0,0,0,.18-.13,11,11,0,0,1,6.16-4,15.67,15.67,0,0,1,5.1-.49,9,9,0,0,1,5.72,2.39,10.83,10.83,0,0,1,2.3,3.15,17,17,0,0,1,1.45,4.51,24.5,24.5,0,0,1,.38,4.44V48.6a1.46,1.46,0,0,1,0,.48c0,.05,0,.07-.07.08h0l-.44,0H39.55S39.49,49.15,39.39,49.11Z"
+                transform="translate(-0.5 -0.81)"
+              />
+              <path
+                d="M1.4,49a.48.48,0,0,1,0-.15V17.22a.35.35,0,0,1,0-.12l.05-.05h.05l.34,0h9.46a.54.54,0,0,1,.12,0c0,.08,0,.17,0,.27V49l-.3.05H2A1.63,1.63,0,0,1,1.4,49Z"
+                transform="translate(-0.5 -0.81)"
+              />
+              <path
+                d="M6.43.81A5.91,5.91,0,1,1,.5,6.72,5.89,5.89,0,0,1,6.43.81Z"
+                transform="translate(-0.5 -0.81)"
+              /></svg
+          ></a>
+        </div>
+      </div>
+      <!--fine box-->
+      <div
+        id="box_team_alexandra"
+        class="box box_33 box_bordo bg_turc flex flex_column justify_content_between vertical_center"
+      >
+        <div class="box_titolo_25 team_box_titolo colore_pelle">Alexandra</div>
+        <div
+          class="box_img box_osservato colore_nero flex justify_content_center vertical_align"
+        >
+          <img
+            class="team_img"
+            src="/immagini/team/criptolab_team_alexandra.png"
+            alt="Alexandra CIO"
+          />
+        </div>
+        <!--fine box_img-->
+        <div class="box_job">CIO</div>
+        <!--fine box_job-->
+        <div class="box_linkedin">
+          <a href="#">
+            <svg class="team_linkedin_svg" viewBox="0 0 49 39.79">
+              <path
+                d="M39.39,49.11V31.32a8.74,8.74,0,0,0-.88-3.79,6,6,0,0,0-1-1.53,4.77,4.77,0,0,0-2.88-1.44,5.76,5.76,0,0,0-1.9.07A4.92,4.92,0,0,0,30,26.28a8,8,0,0,0-1.5,2.79,5.28,5.28,0,0,0-.27,1.68q0,8.82,0,17.65a1.39,1.39,0,0,1-.05.6l-.28,0c-2.09.06-9.24,0-9.73-.05a2,2,0,0,1,0-.27c0-.13,0-.26,0-.39V17.72c0-.21,0-.42,0-.61a.71.71,0,0,1,.5-.08h9.48c.15.14.11.27.11.4,0,.85,0,1.7,0,2.55v.55a.93.93,0,0,0,.18-.13,11,11,0,0,1,6.16-4,15.67,15.67,0,0,1,5.1-.49,9,9,0,0,1,5.72,2.39,10.83,10.83,0,0,1,2.3,3.15,17,17,0,0,1,1.45,4.51,24.5,24.5,0,0,1,.38,4.44V48.6a1.46,1.46,0,0,1,0,.48c0,.05,0,.07-.07.08h0l-.44,0H39.55S39.49,49.15,39.39,49.11Z"
+                transform="translate(-0.5 -0.81)"
+              />
+              <path
+                d="M1.4,49a.48.48,0,0,1,0-.15V17.22a.35.35,0,0,1,0-.12l.05-.05h.05l.34,0h9.46a.54.54,0,0,1,.12,0c0,.08,0,.17,0,.27V49l-.3.05H2A1.63,1.63,0,0,1,1.4,49Z"
+                transform="translate(-0.5 -0.81)"
+              />
+              <path
+                d="M6.43.81A5.91,5.91,0,1,1,.5,6.72,5.89,5.89,0,0,1,6.43.81Z"
+                transform="translate(-0.5 -0.81)"
+              /></svg
+          ></a>
+        </div>
+      </div>
+      <!--fine box-->
+      <div
+        id="box_team_erminio"
+        class="box_33 box_bordo bg_turc flex flex_column justify_content_between vertical_center"
+      >
+        <div class="box_titolo_25 team_box_titolo colore_pelle">Herminius</div>
+        <div
+          class="box_img box_osservato colore_nero flex justify_content_center vertical_align"
+        >
+          <img
+            class="team_img"
+            src="/immagini/team/criptolab_team_erminio.png"
+            alt="Herminius CTO"
+          />
+        </div>
+        <!--fine box_img-->
+        <div class="box_job">CTO</div>
+        <!--fine box_job-->
+        <div class="box_linkedin">
+          <a href="#">
+            <svg class="team_linkedin_svg" viewBox="0 0 49 39.79">
+              <path
+                d="M39.39,49.11V31.32a8.74,8.74,0,0,0-.88-3.79,6,6,0,0,0-1-1.53,4.77,4.77,0,0,0-2.88-1.44,5.76,5.76,0,0,0-1.9.07A4.92,4.92,0,0,0,30,26.28a8,8,0,0,0-1.5,2.79,5.28,5.28,0,0,0-.27,1.68q0,8.82,0,17.65a1.39,1.39,0,0,1-.05.6l-.28,0c-2.09.06-9.24,0-9.73-.05a2,2,0,0,1,0-.27c0-.13,0-.26,0-.39V17.72c0-.21,0-.42,0-.61a.71.71,0,0,1,.5-.08h9.48c.15.14.11.27.11.4,0,.85,0,1.7,0,2.55v.55a.93.93,0,0,0,.18-.13,11,11,0,0,1,6.16-4,15.67,15.67,0,0,1,5.1-.49,9,9,0,0,1,5.72,2.39,10.83,10.83,0,0,1,2.3,3.15,17,17,0,0,1,1.45,4.51,24.5,24.5,0,0,1,.38,4.44V48.6a1.46,1.46,0,0,1,0,.48c0,.05,0,.07-.07.08h0l-.44,0H39.55S39.49,49.15,39.39,49.11Z"
+                transform="translate(-0.5 -0.81)"
+              />
+              <path
+                d="M1.4,49a.48.48,0,0,1,0-.15V17.22a.35.35,0,0,1,0-.12l.05-.05h.05l.34,0h9.46a.54.54,0,0,1,.12,0c0,.08,0,.17,0,.27V49l-.3.05H2A1.63,1.63,0,0,1,1.4,49Z"
+                transform="translate(-0.5 -0.81)"
+              />
+              <path
+                d="M6.43.81A5.91,5.91,0,1,1,.5,6.72,5.89,5.89,0,0,1,6.43.81Z"
+                transform="translate(-0.5 -0.81)"
+              /></svg
+          ></a>
+        </div>
+      </div>
+      <!--fine box-->
+    </div>
+    <!--fine riga-->
+
+    <!--Partners-->
+    <div
+      id="partners"
+      class="riga flex flex_column justify_content_between vertical_center"
+    >
+      <div class="w100p box_com bg_pelle">
+        <div id="partners_box_titolo" class="box_titolo colore_nero">
+          Partners
+        </div>
+
+        <div class="marquee">
+          <ul class="marquee_content">
+            <li>
+              <a
+                href="https://hopera.xyz"
+                class="flex justify_content_center vertical_center"
+                ><img
+                  class="marquee_content_img"
+                  src="/immagini/partners/hopera_logo.png"
+                  alt="hopera"
+              /></a>
+            </li>
+            <li>
+              <a href="" class="flex justify_content_center vertical_center"
+                ><img
+                  class="marquee_content_img"
+                  src="/immagini/partners/infranto_logo_Tv_criptolab.svg"
+                  alt="infranto"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.integrityillusion.com/"
+                class="flex justify_content_center vertical_center"
+              >
+                <img
+                  class="marquee_content_img"
+                  src="/immagini/partners/integrityIllusion_logo_criptolab.svg"
+                  alt="integrity illusion"
+              /></a>
+            </li>
+            <il
+              ><a
+                href="https://iurta.com/"
+                class="flex justify_content_center vertical_center"
+                ><img
+                  class="marquee_content_img"
+                  src="/immagini/partners/iurta_saiga_logo_criptolab.svg"
+                  alt="iurta"
+              /></a>
+            </il>
+            <li>
+              <a
+                href="https://mahekeh.xyz/"
+                class="flex justify_content_center vertical_center"
+                ><img
+                  class="marquee_content_img"
+                  src="/immagini/partners/mahekeh_logo_criptolab.svg"
+                  alt="mahekeh"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://monaiker.art/"
+                class="flex justify_content_center vertical_center"
+                ><img
+                  class="marquee_content_img"
+                  src="/immagini/partners/monaiker_logo_criptolab.svg"
+                  alt="monAIker"
+              /></a>
+            </li>
+            <li>
+              <a href="" class="flex justify_content_center vertical_center">
+                <img
+                  class="marquee_content_img"
+                  src="/immagini/partners/robits_logo_face_criptolab.svg"
+                  alt="RoBits"
+              /></a>
+            </li>
+          </ul>
+          <!-- Mirrors the content above -->
+          <ul class="marquee_content" aria-hidden="true">
+            <li>
+              <a
+                href="https://hopera.xyz"
+                class="flex justify_content_center vertical_center"
+                ><img
+                  class="marquee_content_img"
+                  src="/immagini/partners/hopera_logo.png"
+                  alt="hopera"
+              /></a>
+            </li>
+            <li>
+              <a href="" class="flex justify_content_center vertical_center"
+                ><img
+                  class="marquee_content_img"
+                  src="/immagini/partners/infranto_logo_Tv_criptolab.svg"
+                  alt="infranto"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.integrityillusion.com/"
+                class="flex justify_content_center vertical_center"
+              >
+                <img
+                  class="marquee_content_img"
+                  src="/immagini/partners/integrityIllusion_logo_criptolab.svg"
+                  alt="integrity illusion"
+              /></a>
+            </li>
+            <il
+              ><a
+                href="https://iurta.com/"
+                class="flex justify_content_center vertical_center"
+                ><img
+                  class="marquee_content_img"
+                  src="/immagini/partners/iurta_saiga_logo_criptolab.svg"
+                  alt="iurta"
+              /></a>
+            </il>
+            <li>
+              <a
+                href="https://mahekeh.xyz/"
+                class="flex justify_content_center vertical_center"
+                ><img
+                  class="marquee_content_img"
+                  src="/immagini/partners/mahekeh_logo_criptolab.svg"
+                  alt="mahekeh"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://monaiker.art/"
+                class="flex justify_content_center vertical_center"
+                ><img
+                  class="marquee_content_img"
+                  src="/immagini/partners/monaiker_logo_criptolab.svg"
+                  alt="monAIker"
+              /></a>
+            </li>
+            <li>
+              <a href="" class="flex justify_content_center vertical_center">
+                <img
+                  class="marquee_content_img"
+                  src="/immagini/partners/robits_logo_face_criptolab.svg"
+                  alt="RoBits"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--fine box-->
+    </div>
+    <!--fine riga-->
+
+    <div
+      id="to_top"
+      class="banner_elemento bg_arancio flex justify_content_center vertical_center mrhide"
+    >
+      <a href="#top" class="flex justify_content_center vertical_center">
+        <svg id="freccia_top_svg" viewBox="0 0 30.47 49">
+          <path
+            d="M39.69,19,28.09,1.87A3.15,3.15,0,0,0,25,.54a3.15,3.15,0,0,0-3.09,1.33L10.31,19a3.14,3.14,0,1,0,5.2,3.53L22,12.89V46.36a3.15,3.15,0,0,0,6.29,0V13.43l6.16,9.09A3.14,3.14,0,1,0,39.69,19Z"
+            transform="translate(-9.77 -0.5)"
+          /></svg
+      ></a>
+    </div>
+    <!--fine to_top-->
+
+    <footer id="footer">
+      <div class="flex flex_column vertical_center h100p">
+        <h1 class="footer_txt">
+          ©
+          <script async="">
+            document.write(new Date().getFullYear());
+          </script>
+          Cripto Lab | All Rights Reserved
+        </h1>
+
+        <div class="social_box">
+          <div
+            class="social_box_icons flex justify_content_between vertical_center"
+          >
+            <a
+              href="t.me/CryptoLabIta"
+              class="social_icons flex justify_content_between vertical_center"
+            >
+              <svg id="social_icons_twitter" viewBox="0 0 49 39.79">
+                <path
+                  d="M44.52,16.32V15a20.31,20.31,0,0,0,5-5.19,20.69,20.69,0,0,1-5.77,1.58,10,10,0,0,0,4.41-5.57,19.81,19.81,0,0,1-6.38,2.44,10,10,0,0,0-17.37,6.87,10.4,10.4,0,0,0,.26,2.3A28.6,28.6,0,0,1,3.93,7,10.05,10.05,0,0,0,7,20.37a10.11,10.11,0,0,1-4.56-1.25v.13a10.05,10.05,0,0,0,8.07,9.84A10.24,10.24,0,0,1,6,29.27a10,10,0,0,0,9.39,7A20.13,20.13,0,0,1,2.9,40.52a21.46,21.46,0,0,1-2.4-.14A28.42,28.42,0,0,0,15.93,44.9C34.45,44.9,44.52,29.59,44.52,16.32Z"
+                  transform="translate(-0.5 -5.1)"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              class="social_icons flex justify_content_between vertical_center"
+            >
+              <svg id="social_icons_discord" viewBox="0 0 49 39.79">
+                <path
+                  d="M42,9.54A40.69,40.69,0,0,0,31.9,6.43a29.17,29.17,0,0,0-1.3,2.63,37.68,37.68,0,0,0-11.22,0,26.65,26.65,0,0,0-1.29-2.63A41.34,41.34,0,0,0,8,9.55,40.86,40.86,0,0,0,.71,37.34h0a40.62,40.62,0,0,0,12.4,6.23,29.9,29.9,0,0,0,2.65-4.28,25.86,25.86,0,0,1-4.18-2c.35-.25.69-.52,1-.77a29.12,29.12,0,0,0,24.78,0c.34.27.68.54,1,.77a26.37,26.37,0,0,1-4.19,2,29.09,29.09,0,0,0,2.66,4.28,40.7,40.7,0,0,0,12.4-6.22h0A40.85,40.85,0,0,0,42,9.54ZM16.86,31.75a4.68,4.68,0,0,1-4.41-4.89A4.65,4.65,0,0,1,16.85,22a4.64,4.64,0,0,1,4.42,4.91A4.68,4.68,0,0,1,16.86,31.75Zm16.28,0a4.68,4.68,0,0,1-4.41-4.89A4.66,4.66,0,0,1,33.14,22a4.62,4.62,0,0,1,4.4,4.91A4.67,4.67,0,0,1,33.14,31.75Z"
+                  transform="translate(-0.5 -6.43)"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              class="social_icons flex justify_content_between vertical_center"
+            >
+              <svg id="social_icons_telegram" viewBox="0 0 49 39.79">
+                <polygon
+                  id="social_box_icons_telegram_poly_1"
+                  points="49 0 39.56 36.38 26.54 28.82 18.98 34.49 14.21 21.37 0 16.39 49 0"
+                />
+                <polygon
+                  id="social_box_icons_telegram_poly_2"
+                  points="48.87 0.5 20.27 24.85 18.98 34.49 14.21 21.37 48.87 0.5"
+                  style="fill: rgb(206, 206, 209)"
+                />
+                <polygon
+                  id="social_box_icons_telegram_poly_3"
+                  points="18.98 34.49 26.54 28.82 20.27 24.85 18.98 34.49"
+                  style="fill: rgb(120, 120, 121)"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              class="social_icons social_icons_last flex justify_content_between vertical_center"
+            >
+              <svg id="social_icons_linkedin" viewBox="0 0 49 39.79">
+                <path
+                  d="M39.39,49.11V31.32a8.74,8.74,0,0,0-.88-3.79,6,6,0,0,0-1-1.53,4.77,4.77,0,0,0-2.88-1.44,5.76,5.76,0,0,0-1.9.07A4.92,4.92,0,0,0,30,26.28a8,8,0,0,0-1.5,2.79,5.28,5.28,0,0,0-.27,1.68q0,8.82,0,17.65a1.39,1.39,0,0,1-.05.6l-.28,0c-2.09.06-9.24,0-9.73-.05a2,2,0,0,1,0-.27c0-.13,0-.26,0-.39V17.72c0-.21,0-.42,0-.61a.71.71,0,0,1,.5-.08h9.48c.15.14.11.27.11.4,0,.85,0,1.7,0,2.55v.55a.93.93,0,0,0,.18-.13,11,11,0,0,1,6.16-4,15.67,15.67,0,0,1,5.1-.49,9,9,0,0,1,5.72,2.39,10.83,10.83,0,0,1,2.3,3.15,17,17,0,0,1,1.45,4.51,24.5,24.5,0,0,1,.38,4.44V48.6a1.46,1.46,0,0,1,0,.48c0,.05,0,.07-.07.08h0l-.44,0H39.55S39.49,49.15,39.39,49.11Z"
+                  transform="translate(-0.5 -0.81)"
+                />
+                <path
+                  d="M1.4,49a.48.48,0,0,1,0-.15V17.22a.35.35,0,0,1,0-.12l.05-.05h.05l.34,0h9.46a.54.54,0,0,1,.12,0c0,.08,0,.17,0,.27V49l-.3.05H2A1.63,1.63,0,0,1,1.4,49Z"
+                  transform="translate(-0.5 -0.81)"
+                />
+                <path
+                  d="M6.43.81A5.91,5.91,0,1,1,.5,6.72,5.89,5.89,0,0,1,6.43.81Z"
+                  transform="translate(-0.5 -0.81)"
+                />
+              </svg>
+            </a>
+          </div>
+          <!--fine social_box_icons-->
+        </div>
+        <!--fine social_box-->
+      </div>
+      <!--fine flex-->
+    </footer>
+    <!--Fine footer-->
+
+    <script src="/js/funzioni.js" type="text/javascript"></script>
+    <script src="/js/form_validazione.js" type="text/javascript"></script>
+    <script>
+      tsParticles.load("tsparticles", {
+        autoPlay: true,
+        background: {
+          color: {
+            value: "#151515",
+          },
+          //image: "url('/immagini/backgrounds/logo.jfif')",
+          position: "50% 50%",
+          repeat: "no-repeat",
+          size: "cover",
+          opacity: 1,
+        },
+        backgroundMask: {
+          composite: "destination-out",
+          cover: {
+            color: {
+              value: {
+                r: 0,
+                g: 0,
+                b: 0,
+              },
+            },
+            opacity: 1,
+          },
+          enable: true,
+        },
+        fullScreen: {
+          enable: true,
+          zIndex: 1,
+        },
+        detectRetina: true,
+        duration: 0,
+        fpsLimit: 120,
+        interactivity: {
+          detectsOn: "window",
+          events: {
+            onClick: {
+              enable: true,
+              mode: "push",
+            },
+            onDiv: {
+              selectors: [],
+              enable: false,
+              mode: [],
+              type: "circle",
+            },
+            onHover: {
+              enable: true,
+              mode: "bubble",
+              parallax: {
+                enable: false,
+                force: 60,
+                smooth: 10,
+              },
+            },
+            resize: true,
+          },
+          modes: {
+            attract: {
+              distance: 200,
+              duration: 0.4,
+              easing: "ease-out-quad",
+              factor: 1,
+              maxSpeed: 50,
+              speed: 1,
+            },
+            bounce: {
+              distance: 200,
+            },
+            bubble: {
+              distance: 400,
+              duration: 2,
+              mix: false,
+              opacity: 1,
+              size: 100,
+            },
+            connect: {
+              distance: 80,
+              links: {
+                opacity: 0.5,
+              },
+              radius: 60,
+            },
+            grab: {
+              distance: 400,
+              links: {
+                blink: false,
+                consent: false,
+                opacity: 1,
+              },
+            },
+            light: {
+              area: {
+                gradient: {
+                  start: {
+                    value: "#ffffff",
+                  },
+                  stop: {
+                    value: "#000000",
+                  },
+                },
+                radius: 1000,
+              },
+              shadow: {
+                color: {
+                  value: "#000000",
+                },
+                length: 2000,
+              },
+            },
+            push: {
+              default: true,
+              groups: [],
+              quantity: 4,
+            },
+            remove: {
+              quantity: 2,
+            },
+            repulse: {
+              distance: 200,
+              duration: 0.4,
+              factor: 100,
+              speed: 1,
+              maxSpeed: 50,
+              easing: "ease-out-quad",
+            },
+            slow: {
+              factor: 3,
+              radius: 200,
+            },
+            trail: {
+              delay: 1,
+              pauseOnStop: false,
+              quantity: 1,
+            },
+          },
+        },
+        manualParticles: [],
+        motion: {
+          disable: false,
+          reduce: {
+            factor: 4,
+            value: true,
+          },
+        },
+        particles: {
+          bounce: {
+            horizontal: {
+              random: {
+                enable: false,
+                minimumValue: 0.1,
+              },
+              value: 1,
+            },
+            vertical: {
+              random: {
+                enable: false,
+                minimumValue: 0.1,
+              },
+              value: 1,
+            },
+          },
+          collisions: {
+            bounce: {
+              horizontal: {
+                random: {
+                  enable: false,
+                  minimumValue: 0.1,
+                },
+                value: 1,
+              },
+              vertical: {
+                random: {
+                  enable: false,
+                  minimumValue: 0.1,
+                },
+                value: 1,
+              },
+            },
+            enable: false,
+            mode: "bounce",
+            overlap: {
+              enable: true,
+              retries: 0,
+            },
+          },
+          color: {
+            value: "#151515",
+            animation: {
+              h: {
+                count: 0,
+                enable: false,
+                offset: 0,
+                speed: 1,
+                sync: true,
+              },
+              s: {
+                count: 0,
+                enable: false,
+                offset: 0,
+                speed: 1,
+                sync: true,
+              },
+              l: {
+                count: 0,
+                enable: false,
+                offset: 0,
+                speed: 1,
+                sync: true,
+              },
+            },
+          },
+          destroy: {
+            mode: "none",
+            split: {
+              count: 1,
+              factor: {
+                random: {
+                  enable: false,
+                  minimumValue: 0,
+                },
+                value: 3,
+              },
+              rate: {
+                random: {
+                  enable: false,
+                  minimumValue: 0,
+                },
+                value: {
+                  min: 4,
+                  max: 9,
+                },
+              },
+              sizeOffset: true,
+            },
+          },
+          gradient: [],
+          groups: {},
+          life: {
+            count: 0,
+            delay: {
+              random: {
+                enable: false,
+                minimumValue: 0,
+              },
+              value: 0,
+              sync: false,
+            },
+            duration: {
+              random: {
+                enable: false,
+                minimumValue: 0.0001,
+              },
+              value: 0,
+              sync: false,
+            },
+          },
+          links: {
+            blink: false,
+            color: {
+              value: "#ffffff",
+            },
+            consent: false,
+            distance: 150,
+            enable: true,
+            frequency: 1,
+            opacity: 1,
+            shadow: {
+              blur: 5,
+              color: {
+                value: "#00ff00",
+              },
+              enable: false,
+            },
+            triangles: {
+              enable: false,
+              frequency: 1,
+            },
+            width: 1,
+            warp: false,
+          },
+          move: {
+            angle: {
+              offset: 0,
+              value: 90,
+            },
+            attract: {
+              distance: 200,
+              enable: false,
+              rotate: {
+                x: 600,
+                y: 1200,
+              },
+            },
+            decay: 0,
+            distance: {},
+            direction: "none",
+            drift: 0,
+            enable: true,
+            gravity: {
+              acceleration: 9.81,
+              enable: false,
+              inverse: false,
+              maxSpeed: 50,
+            },
+            path: {
+              clamp: true,
+              delay: {
+                random: {
+                  enable: false,
+                  minimumValue: 0,
+                },
+                value: 0,
+              },
+              enable: false,
+              options: {},
+            },
+            outModes: {
+              default: "out",
+              bottom: "out",
+              left: "out",
+              right: "out",
+              top: "out",
+            },
+            random: false,
+            size: false,
+            speed: 2,
+            spin: {
+              acceleration: 0,
+              enable: false,
+            },
+            straight: false,
+            trail: {
+              enable: false,
+              length: 10,
+              fillColor: {
+                value: "#000000",
+              },
+            },
+            vibrate: false,
+            warp: false,
+          },
+          number: {
+            density: {
+              enable: true,
+              area: 800,
+              factor: 1000,
+            },
+            limit: 0,
+            value: 80,
+          },
+          opacity: {
+            random: {
+              enable: false,
+              minimumValue: 0.1,
+            },
+            value: 1,
+            animation: {
+              count: 0,
+              enable: false,
+              speed: 1,
+              sync: false,
+              destroy: "none",
+              startValue: "random",
+              minimumValue: 0.1,
+            },
+          },
+          orbit: {
+            animation: {
+              count: 0,
+              enable: false,
+              speed: 1,
+              sync: false,
+            },
+            enable: false,
+            opacity: 1,
+            rotation: {
+              random: {
+                enable: false,
+                minimumValue: 0,
+              },
+              value: 45,
+            },
+            width: 1,
+          },
+          reduceDuplicates: false,
+          repulse: {
+            random: {
+              enable: false,
+              minimumValue: 0,
+            },
+            value: 0,
+            enabled: false,
+            distance: 1,
+            duration: 1,
+            factor: 1,
+            speed: 1,
+          },
+          roll: {
+            darken: {
+              enable: false,
+              value: 0,
+            },
+            enable: false,
+            enlighten: {
+              enable: false,
+              value: 0,
+            },
+            mode: "vertical",
+            speed: 25,
+          },
+          rotate: {
+            random: {
+              enable: false,
+              minimumValue: 0,
+            },
+            value: 0,
+            animation: {
+              enable: false,
+              speed: 0,
+              sync: false,
+            },
+            direction: "clockwise",
+            path: false,
+          },
+          shadow: {
+            blur: 0,
+            color: {
+              value: "#000000",
+            },
+            enable: false,
+            offset: {
+              x: 0,
+              y: 0,
+            },
+          },
+          shape: {
+            options: {},
+            type: "circle",
+          },
+          size: {
+            random: {
+              enable: true,
+              minimumValue: 1,
+            },
+            value: {
+              min: 1,
+              max: 30,
+            },
+            animation: {
+              count: 0,
+              enable: false,
+              speed: 40,
+              sync: false,
+              destroy: "none",
+              startValue: "random",
+              minimumValue: 0.1,
+            },
+          },
+          stroke: {
+            width: 0,
+          },
+          tilt: {
+            random: {
+              enable: false,
+              minimumValue: 0,
+            },
+            value: 0,
+            animation: {
+              enable: false,
+              speed: 0,
+              sync: false,
+            },
+            direction: "clockwise",
+            enable: false,
+          },
+          twinkle: {
+            lines: {
+              enable: false,
+              frequency: 0.05,
+              opacity: 1,
+            },
+            particles: {
+              enable: false,
+              frequency: 0.05,
+              opacity: 1,
+            },
+          },
+          wobble: {
+            distance: 5,
+            enable: false,
+            speed: 50,
+          },
+          zIndex: {
+            random: {
+              enable: false,
+              minimumValue: 0,
+            },
+            value: 0,
+            opacityRate: 1,
+            sizeRate: 1,
+            velocityRate: 1,
+          },
+        },
+        pauseOnBlur: true,
+        pauseOnOutsideViewport: true,
+        responsive: [],
+        style: {},
+        themes: [],
+        zLayers: 100,
+      });
+    </script>
+  </body>
+</html>

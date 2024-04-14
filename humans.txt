@@ -1,0 +1,16 @@
+/* TEAM */
+Creator: Erminio Ricciardi
+Title:      Cripto Lab
+Position:   Developer
+Site:       http://www.cryptolab.com
+Description: Web3 Agency
+
+/* THANKS */
+Name: Nicola (VjAlbert)
+
+/* SITE */
+Created:     2022/03/05
+Language:    Italian (IT), English (EN)
+Standards:   HTML5, CSS3, JS, PHP
+Components:  jQuery
+Software:    Visual Code
