@@ -478,7 +478,7 @@ canvas {
   left: 0;
   width: 100%;
   height: 100vh !important;
-  background-image: url(immagini/bg/criptolab_logo_bg.png);
+  background-image: url(../immagini/bg/criptolab_logo_bg.png);
   background-size: contain !important;
   background-position: center !important;
   background-repeat: no-repeat;
@@ -1181,7 +1181,7 @@ canvas {
   }
 
   canvas {
-    background-image: url(immagini/bg/criptolab_bg.png);
+    background-image: url(../immagini/bg/criptolab_bg.png);
   }
 
   .banner_elemento {
@@ -1506,10 +1506,10 @@ canvas {
 
 @font-face {
   font-family: Adam_Gorry_Inline;
-  src: url(font/adam_gorry_inline.ttf);
+  src: url(../font/adam_gorry_inline.ttf);
 }
 
 @font-face {
   font-family: Tahyp_Rahy_Ter22;
-  src: url(font/Tahyp-rahy-ter22.ttf);
+  src: url(../font/Tahyp-rahy-ter22.ttf);
 }
